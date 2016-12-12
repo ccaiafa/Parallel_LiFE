@@ -17,15 +17,16 @@ load(feFileName)
 %   computing the following optimization problem:
 %   Min_w ||M*w - y||^2
 M           = fe.life.M;
-nVoxels     = size(M,2);
+nVoxels     = size(M.Phi,2);
 nBvecs      = size(M.DictSig,1);
-nFibers     = size(M,3);
-dsig        = reshape(fe.life.diffusion_signal_img',[1,nVoxels*nBvecs]);
+nFibers     = size(M.Phi,3);
+dSig        = reshape(fe.life.diffusion_signal_img',[1,nVoxels*nBvecs]);
 y           = (dSig - reshape(repmat( ...
                 mean(reshape(dSig, nBvecs, nVoxels),1),...
                 nBvecs,1), size(dSig)))';
 w0          = zeros(nFibers,1);
 
+opt = solopt();
 opt.maxit   = 50;
 
 clear fe; % free memory
