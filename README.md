@@ -21,4 +21,26 @@ To allow code developers to reduce the computation time of this task by using pa
 
 ## Instructions to run this code
 
-### 1. Download the repository ()
+### 1. Download/clone this repository (https://github.com/ccaiafa/Parallel_LiFE.git)
+* Add the Paralell_LiFE folder to your matlab search path. To do so in the MatLab prompt type: 
+```
+   >> addpath(genpath('/my/path/to/the/Paralell_LiFE/folder/'))
+```
+### 2. [Download the Demo Datasets](http://purl.dlib.indiana.edu/iusw/data/2022/20995/Demo_Data_for_Multidimensional_Encoding_of_Brain_Connectomes.tar.gz).
+* Download the demo datasets from the repository [doi:10.5967/K8X63JTX](http://purl.dlib.indiana.edu/iusw/data/2022/20995/Demo_Data_for_Multidimensional_Encoding_of_Brain_Connectomes.tar.gz).
+* UNTAR the main file Demo_Data_for_Multidimensional_Encoding_of_Brain_Connectomes.tar.gz
+* Go inside the folder Demo_Data_for_Multidimensional_Encoding_of_Brain_Connectomes/ and UNZIP the following files: Figs_data.zip, HCP3T.zip, HCP7T, and STN. You can deleted the original .zip files once they are unziped.
+* The structures of files and foldes under the main folder should looks like as follows
+* feDemoDataPath.m
+* Figs_data/
+* HCP3T/
+* HCP7T/
+* README.txt
+* STN/
+* 
+* Add the main data folder (Demo_Data_for_Multidimensional_Encoding_of_Brain_Connectomes/) to your matlab search path. To do so in the MatLab prompt type:
+```
+   >> addpath(genpath('/my/path/to/the/Demo_Data_for_Multidimensional_Encoding_of_Brain_Connectomes/'))
+```
+### 3. [Run the main script](/Main.m).
+This script extract the data from one brain and run the optimization using only 50 iterations. The number of iterations can be changed through the variable opt.maxit.
