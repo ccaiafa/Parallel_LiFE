@@ -37,7 +37,7 @@ To allow code developers to reduce the computation time of this task by using pa
 * HCP7T/
 * README.txt
 * STN/
-* 
+
 * Add the main data folder (Demo_Data_for_Multidimensional_Encoding_of_Brain_Connectomes/) to your matlab search path. To do so in the MatLab prompt type:
 ```
    >> addpath(genpath('/my/path/to/the/Demo_Data_for_Multidimensional_Encoding_of_Brain_Connectomes/'))
