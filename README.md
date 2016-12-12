@@ -1,6 +1,6 @@
 # Parallel_LiFE
 ## About
-This set of routines and associated dataset provide an example of the optimization problem solved as part of the LiFE method as implemented in the Encode Toolbox (https://github.com/brain-life/encode.git).
+This set of routines and associated dataset provide an example of the optimization problem solved in the Linear Fascicle Evaluation (LiFE) method as implemented in the Encode Toolbox (https://github.com/brain-life/encode.git).
 
 In this example, only 50 iterations of the BBNNLS algorithm are performed. In a real application we use 500 or more iterations.
 
@@ -17,7 +17,7 @@ The above functions make use of the tensor decomposition format of the very larg
 For clarity, we have included a Matlab version of these two functions inside the folder \mexfiles\ with the names 'Mtransp_times_b' and 'M_times_w'. Please take a look into these very short codes. Note that both functions are reduced to simple forloops.
 
 ## Purpose of the repository: 
-To allow code developers to reduce the computation time of this task by using parallel implementation.
+To allow code developers to reduce the computation time of this task by using a parallel implementation.
 
 ## Instructions to run this code
 
