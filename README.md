@@ -19,6 +19,9 @@ For clarity, we have included a Matlab version of these two functions inside the
 ## Purpose of the repository: 
 To allow code developers to reduce the computation time of this task by using a parallel implementation.
 
+## Dependencies.
+* [MatLab](http://www.mathworks.com/products/matlab/).
+
 ## Instructions to run this code
 
 ### 1. Download/clone this repository (https://github.com/ccaiafa/Parallel_LiFE.git)
