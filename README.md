@@ -45,8 +45,8 @@ To allow code developers to reduce the computation time of this task by using a 
 ```
    >> addpath(genpath('/my/path/to/the/Demo_Data_for_Multidimensional_Encoding_of_Brain_Connectomes/'))
 ```
-### 3 [Generate mex files for your system] 
+### 3 Generate mex files for your system 
 Run the script /Generate_mex_files.m). This script generate the mex files using the C code provided in the folder /mexfiles/
 
-### 4. [Run the Main.m script]
+### 4. Run the Main.m script
 This script extract the data from one brain and run the optimization using only 50 iterations. The number of iterations can be changed through the variable opt.maxit.
